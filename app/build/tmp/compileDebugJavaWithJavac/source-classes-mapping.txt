@@ -1,0 +1,8 @@
+com/incrowdsports/task/databinding/FixtureListFragmentBinding.java
+ com.incrowdsports.task.databinding.FixtureListFragmentBinding
+com/incrowdsports/task/BuildConfig.java
+ com.incrowdsports.task.BuildConfig
+com/incrowdsports/task/databinding/ActivityMainBinding.java
+ com.incrowdsports.task.databinding.ActivityMainBinding
+com/incrowdsports/task/databinding/FixtureLayoutBinding.java
+ com.incrowdsports.task.databinding.FixtureLayoutBinding

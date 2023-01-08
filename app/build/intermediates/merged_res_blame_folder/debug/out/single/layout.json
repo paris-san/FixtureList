@@ -1,0 +1,14 @@
+[
+    {
+        "merged": "/Users/curtjrees/Downloads/InCrowd Android Tech Task/Android Project/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/activity_main.xml",
+        "source": "/Users/curtjrees/Downloads/InCrowd Android Tech Task/Android Project/app/src/main/res/layout/activity_main.xml"
+    },
+    {
+        "merged": "/Users/curtjrees/Downloads/InCrowd Android Tech Task/Android Project/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/fixture_list_fragment.xml",
+        "source": "/Users/curtjrees/Downloads/InCrowd Android Tech Task/Android Project/app/src/main/res/layout/fixture_list_fragment.xml"
+    },
+    {
+        "merged": "/Users/curtjrees/Downloads/InCrowd Android Tech Task/Android Project/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/fixture_layout.xml",
+        "source": "/Users/curtjrees/Downloads/InCrowd Android Tech Task/Android Project/app/src/main/res/layout/fixture_layout.xml"
+    }
+]
