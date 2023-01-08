@@ -8,7 +8,8 @@ import androidx.recyclerview.widget.RecyclerView
 import com.incrowdsports.task.data.models.Fixture
 import com.incrowdsports.task.databinding.FixtureLayoutBinding
 
-class FixtureListAdapter : ListAdapter<FixtureListAdapter.FixtureItem, RecyclerView.ViewHolder>(diffCallback) {
+class FixtureListAdapter :
+    ListAdapter<FixtureListAdapter.FixtureItem, RecyclerView.ViewHolder>(diffCallback) {
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): RecyclerView.ViewHolder {
         return FixtureViewHolder.create(parent)
@@ -18,7 +19,8 @@ class FixtureListAdapter : ListAdapter<FixtureListAdapter.FixtureItem, RecyclerV
         (holder as FixtureViewHolder).bind(getItem(position))
     }
 
-    private class FixtureViewHolder(private val binding: FixtureLayoutBinding) : RecyclerView.ViewHolder(binding.root) {
+    private class FixtureViewHolder(private val binding: FixtureLayoutBinding) :
+        RecyclerView.ViewHolder(binding.root) {
 
         fun bind(item: FixtureItem) {
             binding.root.setOnClickListener { item.onClick.invoke() }
@@ -32,7 +34,13 @@ class FixtureListAdapter : ListAdapter<FixtureListAdapter.FixtureItem, RecyclerV
         }
 
         companion object {
-            fun create(parent: ViewGroup) = FixtureViewHolder(FixtureLayoutBinding.inflate(LayoutInflater.from(parent.context), parent, false))
+            fun create(parent: ViewGroup) = FixtureViewHolder(
+                FixtureLayoutBinding.inflate(
+                    LayoutInflater.from(parent.context),
+                    parent,
+                    false
+                )
+            )
         }
 
     }
