@@ -28,7 +28,7 @@ class FixtureListFragment : Fragment(R.layout.fixture_list_fragment) {
         val season = 2021
 
         binding.swipeRefreshLayout.setOnRefreshListener {
-            viewModel.loadData(compId = compId, season = season)
+            viewModel.loadData(compId = compId, season = season, size = 10)
         }
 
         val adapter = FixtureListAdapter()
@@ -39,7 +39,7 @@ class FixtureListFragment : Fragment(R.layout.fixture_list_fragment) {
             .onEach { renderFixtureList(fixtureList = it, adapter = adapter) }
             .launchIn(viewLifecycleOwner.lifecycleScope)
 
-        viewModel.loadData(compId = compId, season = season)
+        viewModel.loadData(compId = compId, season = season, size = 10)
     }
 
     private fun renderFixtureList(fixtureList: List<Fixture>, adapter: FixtureListAdapter) {
