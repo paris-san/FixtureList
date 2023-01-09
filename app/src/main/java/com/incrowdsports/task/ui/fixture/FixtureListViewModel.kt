@@ -10,7 +10,7 @@ import kotlinx.coroutines.launch
 
 class FixtureListViewModel(private val service: FixtureService) : ViewModel() {
 
-    val fixtureList = MutableSharedFlow<List<Fixture>>()
+    val fixtureList = MutableSharedFlow<List<Fixture>>(replay = 1)
 
     fun loadData(compId: Int, season: Int, size: Int) {
         viewModelScope.launch(Dispatchers.Main) {
